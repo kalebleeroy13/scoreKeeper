@@ -1,7 +1,8 @@
 let p1Button = document.querySelector("#p1");
 let p2Button = document.getElementById("p2");
-let p1Display = document.querySelector("#p1Display")
-let p2Display = document.querySelector("#p2Display")
+let resetButton = document.getElementById("reset");
+let p1Display = document.querySelector("#p1Display");
+let p2Display = document.querySelector("#p2Display");
 let p1Score = 0;
 let p2Score = 0;
 let gameOver = false;
@@ -24,6 +25,7 @@ p2Button.addEventListener("click", function() {
   if(!gameOver){
   p2Score++;
   if(p2Score === winningScore){
+    p2Display.classList.add("winner");
     gameOver = true;
   }
   p2Display.textContent = p2Score
