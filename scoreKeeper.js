@@ -4,6 +4,8 @@ let p1Display = document.querySelector("#p1Display")
 let p2Display = document.querySelector("#p2Display")
 let p1Score = 0;
 let p2Score = 0;
+let gameOver = false:
+
 
 
 
