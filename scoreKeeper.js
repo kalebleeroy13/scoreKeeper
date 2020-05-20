@@ -31,3 +31,10 @@ p2Button.addEventListener("click", function() {
   p2Display.textContent = p2Score
 }
 });
+
+resetButton.addEventListener("click", function() {
+  p1Score = 0;
+  p2Score = 0;
+  p1Dispalay.textContent = 0;
+  p2Display.textContent = 0;
+});
