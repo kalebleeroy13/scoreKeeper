@@ -13,6 +13,7 @@ p1Button.addEventListener("click", function() {
   if(!gameOver) {
   p1Score++;
   if(p1Score === winningScore){
+    p1Display.classList.add("winner");
     gameOver = true;
   }
   p1Display.textContent = p1Score
