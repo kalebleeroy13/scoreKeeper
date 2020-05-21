@@ -3,6 +3,7 @@ let p2Button = document.getElementById("p2");
 let resetButton = document.getElementById("reset");
 let p1Display = document.querySelector("#p1Display");
 let p2Display = document.querySelector("#p2Display");
+let numInput = document.querySelector("input");
 let p1Score = 0;
 let p2Score = 0;
 let gameOver = false;
@@ -39,4 +40,5 @@ resetButton.addEventListener("click", function() {
   p2Display.textContent = 0;
   p1Display.classList.remove("winner");
   p2Display.classList.remove("winner");
+  gameOver = false;
 });
